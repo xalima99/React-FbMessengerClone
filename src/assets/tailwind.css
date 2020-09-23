@@ -1,0 +1,80 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.group:hover .group-hover\:block {
+  display: block;
+}
+.hover\:w-64:hover {
+  width: 45%;
+}
+
+/* NO NEED THIS CSS - just for custom scrollbar which can also be configured in tailwind.config.js*/
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d3748;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2b6cb0;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #1a202c;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.chat-footer {
+  width: 75% !important;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+}
+
+.login {
+  height: 100vh;
+  background-color: #151821;
+  display: grid;
+  place-items: center;
+}
+
+.login-container > img {
+  object-fit: contain;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.login-container {
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#loginlogo {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
